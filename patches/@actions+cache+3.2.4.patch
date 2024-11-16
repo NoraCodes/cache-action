@@ -1,0 +1,13 @@
+diff --git a/node_modules/@actions/cache/lib/internal/constants.js b/node_modules/@actions/cache/lib/internal/constants.js
+index 45b910d..659baef 100644
+--- a/node_modules/@actions/cache/lib/internal/constants.js
++++ b/node_modules/@actions/cache/lib/internal/constants.js
+@@ -26,7 +26,7 @@ exports.DefaultRetryDelay = 5000;
+ // Socket timeout in milliseconds during download.  If no traffic is received
+ // over the socket during this period, the socket is destroyed and the download
+ // is aborted.
+-exports.SocketTimeout = 5000;
++exports.SocketTimeout = 60000;
+ // The default path of GNUtar on hosted Windows runners
+ exports.GnuTarPathOnWindows = `${process.env['PROGRAMFILES']}\\Git\\usr\\bin\\tar.exe`;
+ // The default path of BSDtar on hosted Windows runners
